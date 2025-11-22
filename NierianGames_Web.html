@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nierian Game | Almosta Reader</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            min-height: 100vh;
+            background: 
+                linear-gradient(135deg, rgba(50,110,255,0.38) 0%, rgba(242,234,255,0.47) 100%),
+                url('Image-Sequence_001_0000.jpg') center center/cover no-repeat fixed;
+        } 
+        .header {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 90px;
+            background: linear-gradient(90deg, #2256bbcc 0%, #5ae8f5aa 100%);
+            box-shadow: 0 2px 16px #1a214c3d;
+            display: flex; align-items: center; justify-content: center; z-index: 3;
+        }
+        .header h1 {
+            font-size: 2.7em; font-weight: 700;
+            color: #FFD700; margin: 0; letter-spacing: 2px;
+            text-shadow: 0 4px 12px #2d4688, 0 0 2px #fff;
+        }
+        .footer {
+            position: fixed;
+            left: 0; bottom: 0; width: 100%;
+            background: linear-gradient(90deg, #2256bbcc 0%, #5ae8f5aa 100%);
+            text-align: center;
+            padding: 17px 0;
+            font-size: 1em; color: #ffe6b2;
+            box-shadow: 0 -1px 7px #22234c77; z-index: 3;
+        }
+        .footer a {
+            color: #ffe6b2; font-weight: bold; text-decoration: underline;
+            transition: color .24s;
+        }
+        .footer a:hover { color: #ffd700; }
+        .main-area {
+            display: flex; flex-direction: row; align-items: center;
+            justify-content: flex-start; height: calc(100vh - 170px);
+            margin-top: 110px; margin-left: 7vw;
+        }
+        .left-block { display: flex; flex-direction: column; align-items: flex-start; }
+        .games-title {
+            font-size: 2.5em; font-weight: 700;
+            color: #fffef2; letter-spacing: 2px;
+            text-shadow: 0 3px 18px #114489, 2px 2px 10px #f6dc8b;
+            margin-bottom: 36px; margin-left: 10px;
+            filter: drop-shadow(0 0 3px #fefee6);
+        }
+        .card {
+            background: rgba(255,255,255,0.19);
+            border-radius: 22px; 
+            padding: 45px 38px 32px 38px;
+            box-shadow: 0 12px 40px 0 rgba(43,61,124,0.18), 0 2px 16px #26397c71;
+            backdrop-filter: blur(5px);
+            width: 310px;
+            display: flex; flex-direction: column; align-items: center;
+        }
+        .app-icon {
+            width: 92px; height: 92px; border-radius: 26px;
+            background: #fff; margin-bottom: 18px;
+            object-fit: cover; border: 4px solid #37b8f8;
+            box-shadow: 0 7px 24px #2990e077, 0 0 0 8px #fff3;
+        }
+        .card .subtitle {
+            font-size: 1.22em; color: #275FFA; font-weight: 600;
+            letter-spacing: 1px; margin-bottom: 18px; margin-top: 3px;
+            filter: drop-shadow(0 2px 2px #fff6);
+        }
+        .button-link {
+            display: block;
+            background: linear-gradient(90deg,#37b8f8 60%,#FFD700 120%);
+            color: #1a2334;
+            padding: 15px 28px; font-weight: bold;
+            font-size: 1.13em; border-radius: 10px;
+            margin-top: 13px; margin-bottom: 10px;
+            box-shadow: 0 4px 14px #2a7ae245, 0 0 1px #FFD700;
+            border: none; outline: none;
+            transition: background 0.33s, color 0.19s, transform 0.1s;
+        }
+        .button-link:hover {
+            background: linear-gradient(90deg,#FFD700,#37b8f8);
+            color: #073050; transform: scale(1.05); box-shadow: 0 4px 24px #FFD70077;
+        }
+        @media (max-width: 900px) {
+            .main-area { 
+                flex-direction: column; align-items: center; justify-content: center;
+                margin-top: 170px; margin-left: 0;
+            }
+            .left-block { align-items: center; }
+            .games-title { margin-left: 0; margin-bottom: 28px;}
+            .card { width: 96vw; min-width:220px; padding: 32px 4vw; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Nierian Game</h1>
+    </div>
+    <div class="main-area">
+        <div class="left-block">
+            <div class="games-title">
+                Games
+            </div>
+            <div class="card">
+                <img class="app-icon" src="xxxhdpi_Suare.jpg" alt="App Icon" />
+                <div class="subtitle">Almosta Reader<br />Chapter 1: Vowels</div>
+                <a class="button-link" href="https://play.google.com/store/apps/details?id=com.nierianGames.AlmostaReader" target="_blank" rel="noopener noreferrer">
+                    Open Almosta Reader
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Contact: <a href="mailto:nieriangames@gmail.com">nieriangames@gmail.com</a>
+    </div>
+</body>
+</html>
